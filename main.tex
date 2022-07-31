@@ -1,0 +1,656 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+% \newenvironment{tightemize}{
+% \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
+% {\end{itemize}\vspace{-\topsep}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Omesh}{D. Dwivedi}{ \urlstyle{same}
+\href{mailto:odd23@drexel.edu}{odd23@drexel.edu} |
+\href{mailto:odwivedi@pppl.gov}{odwivedi@pppl.gov}  \\ \href{}  267.521.6254 |  669 Brooklyn Street, Philadelphia, PA 19104 
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.44\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Drexel University}
+\descript{Bachelor of Science in Physics}
+\descript{Bachelor of Arts in Mathematics}
+\descript{Honors Program}
+\location{June 2022 | Philadelphia, PA}
+\sectionsep
+
+\subsection{HKU (Exchange Student)}
+% \subsection{The University of Hong Kong (exchange)}
+% \descript{Exchange Student, Faculty of Science}
+\location{Sep-Dec 2018 | Hong Kong, HK}
+\sectionsep
+
+\subsection{GPA: 3.76}
+\subsection{Math GPA: 3.75}
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+
+% \vspace{3}
+% \subsection{Undergraduate}
+% \href{http://www.math.drexel.edu/~jblasiak/AbstractAlgebra331Fall2019.html}{Abstract Algebra I}\\
+% Elements of Modern Analysis I \\
+% Linear Algebra I, II \\
+% \href{https://darijgrinberg.gitlab.io/t/19fco/}{Enumerative Combinatorics} \\
+% Topics in Mathematical Physics \\
+% % Observational Astrophysics \\
+% \sectionsep
+% \subsection{Graduate}
+% \href{http://www.math.drexel.edu/~jblasiak/AlgebraMath533Winter2019.html}{Abstract Algebra}  \\
+% Topics in Graph Theory\\
+% Principles of Analysis 1 \\
+% Algebraic Number Theory \\
+% Topology\\
+% Algebraic Combinatorics (Audit)
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Teaching Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Teaching Experience} 
+
+\runsubsection{Drexel Mathematics Resource Center}\\
+\descript{\textbf{Mathematics Tutor}}
+\location{\textbf{July 2020 – Present | Philadelphia, (Remote)}}
+One on one tutoring to help Drexel Undergraduate Students enrolled in introductory to advanced mathematics courses.\\
+\sectionsep
+\runsubsection{Department of Mathematics}\\
+\descript{\textbf{Mathematics Teaching Assistant/Grader}}
+\location{\textbf{July 2020 – Present | Philadelphia, (Remote)}}
+Linear Algebra II (MATH 387) (Winter 2021,2022), Discrete Mathematics (MATH 221) (Fall 2021), Combinatorics (MATH 222)(Fall 2021).
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Presentations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Presentations}
+
+\runsubsection{Gaseous Electronics Conference}
+\location{October 2020 | Virtual }
+
+\href{http://meetings.aps.org/Meeting/GEC20/Session/TR1.3}{DFTB+ simulation of B$_{\mathrm{x}}$N$_{\mathrm{y}}$ species formation for boron nitride nanotubes synthesis}\\
+\href{http://meetings.aps.org/Meeting/GEC20/Session/TR1.3}{\textbf{Abstract Link}}
+\sectionsep
+
+\runsubsection{STAR Scholars Poster Session}
+\location{August 2018 | Philadelphia }
+
+\href{https://issuu.com/ericalevizelinger/docs/2018_abstract_booklet_-_web_final}{Building GEANT4 Simulations of the Drexel Bubble Chamber for Dark Matter Detection}\\
+\href{https://issuu.com/ericalevizelinger/docs/2018_abstract_booklet_-_web_final}{\textbf{Abstract Link (Page 86)}}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{unsrt}
+\bibliography{publications}
+\nocite{*}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     Activities
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Activities}
+% \textbullet{} \href{https://dragonlink.drexel.edu/organization/mathematics-student-organization}{Mathematics Student Organization}, 2018-Present, President \textbullet{}  
+% \href{https://drexel.campuslabs.com/engage/organization/DUDU}{Drexel University Debate Union}, 2017-Present, Founder/President \textbullet{} \href{https://www.dusers.drexel.edu/~chess/}{Drexel Chess Club}, 2017-Present, Vice President
+% \textbullet{}   \\ 
+% \sectionsep
+% \section{Presentations}
+
+% \descript{\textbullet{}Gaseous Electronics Conference}
+% \location{October 2020 | Virtual }
+
+% DFTB+ simulation of B$_{\mathrm{x}}$N$_{\mathrm{y}}$ species formation for boron nitride nanotubes synthesis
+
+
+
+
+
+% \section{Activites} 
+% \begin{tabular}{rll}
+% 2018- Present         & \href{https://dragonlink.drexel.edu/organization/mathematics-student-organization}{Mathematics Student Organization} & President \\
+% 2018- Present	     & \href{https://drexel.campuslabs.com/engage/organization/DUDU}{Drexel University Debate Union}  & President \\
+% 2017- Present	     & \href{https://www.dusers.drexel.edu/~chess/}{Drexel Chess Club}   & Manager \\
+% 2017- Present	     & Society of Physics Students: Drexel Chapter  & Member\\
+
+% \end{tabular}
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.55\textwidth} 
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     RESEARCH
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \vspace{3}
+% \runsubsection{Drexel University}\\
+% \descript{\textbf{Undergraduate Research Project}}
+% \location{\textbf{July 2020 – Present | Philadelphia, PA (Remote)}}
+% Worked with \textbf{\href{https://www.cip.ifi.lmu.de/~grinberg/}{Dr. Darij Grinberg}} to find and prove the probability of vanishing Jacobi-Trudi determinants in finite fields for Skew-Schur shapes.
+% \vspace{4}
+% \newline
+% \vspace{0.001}
+% \textbullet{} Found and proved the exact probability of vanishing Jacobi-Trudi determinants for connected ribbons \\
+% \textbullet{} Conjectured a general expression for the probability of the Schur polynomial vanishing for n-staircase and k-block staircase partitions, . \\
+% %\textbullet{} Found an alternative proof for the probability of vanishing Jacobi-Trudi determinants for rectangular shapes using the relation between Hankel and Toeplitz Matrices.
+
+% \vspace{10}
+
+% \descript{\textbf{Undergraduate Research Assistant- \href{https://drexel.edu/undergraduate-research/STAR-scholars/STAR-scholars/}{STAR Scholars Program}}
+% }
+% \location{June 2018 – October 2018 | Philadelphia, PA}
+% Worked with \textbf{\href{https://drexel.edu/coas/faculty-research/faculty-directory/Neilson\%20Russell/}{Dr. Russell Neilson}} on setting up and running simulations of the Drexel Bubble Chamber. 
+% \vspace{4}
+% \newline
+% \vspace{0.001}
+% \textbullet{} Built {\textbf{GEANT4}} using {\textbf{cmake}} from scratch on the department system.
+% \newline
+% \textbullet{} Designed \href{https://geant4.web.cern.ch/}{\textbf{GEANT4}} Monte-Carlo simulations of the \href{https://www.picoexperiment.com/}{\textbf{PICO}} (dark matter search experiment) Drexel Bubble Chamber, building, from scratch, its geometry into GEANT4
+% \newline
+% \textbullet{} Analyzed and processed the simulation and experimental data to calculate the probability of \textbf{electronic and nuclear recoils}
+% \sectionsep
+% \vspace{10}
+
+% \runsubsection{Princeton Plasma Physics Laboratory (PPPL) }
+% \descript{Undergraduate Research Assistant (Spring-Summer)}
+% \location{April 2019 – October 2019 | Princeton, New Jersey}
+% Worked with \textbf{\href{https://theory.pppl.gov/people/profile.php?pid=40&n=St\%C3\%A9phane-Ethier}{Dr. Stephane Ethier}} and \textbf{\href{https://theory.pppl.gov/people/profile.php?pid=2&n=Igor-Kaganovich}{Dr. Igor Kaganovich}} and performed a Computational Study of Boron Nitrogen NanoStructure Formation.
+% \vspace{4}
+% \newline
+% \vspace{0.001}
+% \textbullet{} Setup, ran and studied \textbf{MD} simulations of $B_xN_y$ Systems to understand the most efficient pathway to dissociate $N_2$ as well as to create recurring BN chain from such interactions.
+% \newline
+% \textbullet{} Predicted and confirmed a possible pathway of \textbf{FullBorene} formation solely from $B_2$ and $N_2$. Results can be viewed at \textbf{\href{https://vimeo.com/user103046658}{vimeo.com/user103046658}}
+% \newline
+% \textbullet{} Performed Kinetic as well as thermodynamic calculations to check the feasibility of the proposed mechanism of FullBorene formation.
+
+% \vspace{10}
+% \descript{Undergraduate Research Assistant (Spring)}
+% \location{April 2020 – July 2020 | Princeton, New Jersey (Remote)}
+% Worked with \textbf{\href{https://theory.pppl.gov/people/profile.php?pid=2&n=Igor-Kaganovich}{Dr. Igor Kaganovich}} to study Anisotropic Etching of Silicon Nitride using Fluorine.
+% \vspace{4}
+% \newline
+% \vspace{0.01}
+% \textbullet{} Setup an 80 molecule $Si_3N_4$ system with Periodic Boundary Conditions and ran \textbf{MD} simulations of the system interacting with $F$, $HF$ and $(NH_4F)_n$.
+% \newline
+% \textbullet{} Predicted a possible mechanism for etching using $HF$ with water as a catalyst.
+
+% %\sectionsep
+
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Coursework
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Undergraduate Coursework}
+\runsubsection{\href{http://www.math.drexel.edu/~jblasiak/AbstractAlgebra331Fall2019.html}{Abstract Algebra I}}
+\descript{\textbf{Grade: A-}}
+\small Basic Group Theory, Cosets , Group Actions, Isomomorphism Theorems, Sylow's Theorems 
+\sectionsep
+
+\runsubsection{Elements of Modern Analysis I}
+\descript{\textbf{Grade: B}}
+\small Basic Topology, Series, Limits,Continuity, Derivatives, Riemann Integral
+\sectionsep
+
+\runsubsection{Linear Algebra I, II} 
+\descript{Grade: A, A}
+\small Elementary Linear Algebra, JCF, QRD, LUD, SVD, Schur Decomposition 
+\sectionsep
+
+\runsubsection{\href{https://darijgrinberg.gitlab.io/t/19fco/}{Enumerative Combinatorics}} 
+\descript{Grade: A+}
+\small Binomial coefficients, Bijection, Twelve-fold way, Inclusion-Exclusion, Permutations, Partitions and Generating functions.
+\sectionsep
+
+
+\runsubsection{Topics in Mathematical Physics}
+\descript{Grade: A-}
+\small Series, Differential Equations, Gamma and Delta Functions, Elementary Complex and Fourier Analysis
+% Observational Astrophysics \\
+
+\sectionsep
+
+\section{Graduate Coursework}
+\runsubsection{\href{http://www.math.drexel.edu/~jblasiak/AlgebraMath533Winter2019.html}{Abstract Algebra}}
+\descript{Grade: A}
+\small Ring, Fields, Ideals, Modules, Structure Theorem, PIDs, RCF, JCF, SNF, Character, Representation Theory, Artin-Wedderburn (Dummit and Foote)
+\sectionsep
+
+\runsubsection{Topics in Graph Theory}
+\descript{Grade: A}
+\small Elementary Extremal Graph Theory, Asymptotic Analysis, Counting Graphs, Turan's and Mantel's Theorems, Prufer Codes, Steiner Systems, Ramsey Theory, Quasi-Random Graphs, First Moment and Generating Function Methods 
+\sectionsep
+
+\runsubsection{Principles of Analysis 1} 
+\descript{Grade: A}
+\small Metric Spaces, Compactness, Connectedness, Completeness, Limits, Continuity, Series, Derivatives and Integration (Rudin)
+\sectionsep
+
+\runsubsection{Topology}
+\descript{Grade: A}
+\small General Topological Spaces, Function spaces, Limits of Sequences, Separation axioms, Compactness, Connectedness, Continuity, Homeomorphisms, Product of N-spaces; Applications to the Real Line, Euclidean N-space,  Well-known function space, Haussdorf Measures 
+\sectionsep
+
+\runsubsection{Advanced Linear Algebra $\&$ Matrix Analysis}
+\descript{Grade: A+}
+\small QR factorization, Schur’s unitary triangularization, Spectral theorems for normal and Hermitian matrices, Singular value and polar decomposition, JCF, Courant Fisher theorem, Interlacing eigenvalues theorem, Schur’s product theorem, Gelfand’s formula for the spectral radius, Gersgorin discs, Perron-Frobenius theory (Horn and Johnson)
+\sectionsep
+
+\runsubsection{Algebraic Number Theory}
+\descript{ Grade: A} \descript{\small{(Independent Study)}}
+\small Integral, Euclidean, Noetherian and Dedekind Domains; Galois Theory and Field Extensions, Algebraic Number Fields, Integral Bases, Ideal Class Groups and Dirichlet's Unit Theorem (Alaca and Williams) 
+\sectionsep
+
+\runsubsection{Algebraic Combinatorics} 
+\descript{\small(Audit)}
+\small q-binomial coefficients, Determinant and Partition identities,
+Symmetric polynomials,
+Young Tableaux, LR rule, Crystal Operations, Diamond Lemma, Grothendieck and dual Grothendieck polynomials.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Honors and Awards} 
+% \begin{tabular}{rll}
+% 2018         & Pennoni Honors College & \href{https://drexel.edu/undergraduate-research/STAR-scholars/summer-showcase/}{Star Scholar} \\
+% 2018-19	     & Pennoni Honors College  & \href{https://drexel.edu/undergraduate-research/research-benefits/undergraduate-research-leaders/Meet\%20the\%20URLs/}{Undergraduate Research Leader} \\
+% 2014     & top 300/25000 & \href{https://www.iapt.org.in/exams/nse/nsep.html/}{National Standard Examination in Physics}  \\
+% 2017     & top 4000/1400000 & JEE Main and Advanced (IIT-JEE) \\
+% 2015    & HBCSE & Regional Mathematics Olympiad Scholar \\
+% 2015    & IARCS (top 171) &\href{https://www.iarcs.org.in/inoi/2015/}{Zonal Informatics Olympiad} \\
+% \end{tabular}
+% \sectionsep
+
+% \section{Activites} 
+% \begin{tabular}{rll}
+% 2018- Present         & \href{https://dragonlink.drexel.edu/organization/mathematics-student-organization}{Mathematics Student Organization} & President \\
+% 2018- Present	     & \href{https://drexel.campuslabs.com/engage/organization/DUDU}{Drexel University Debate Union}  & President \\
+% 2017- Present	     & \href{https://www.dusers.drexel.edu/~chess/}{Drexel Chess Club}   & Manager \\
+% 2017- Present	     & Society of Physics Students: Drexel Chapter  & Member\\
+
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.44\textwidth} 
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     EDUCATION
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Education} 
+% \vspace{3}
+% \subsection{Drexel University}
+% \descript{Bachelor of Science in Physics}
+% \descript{Bachelor of Arts in Mathematics}
+% \descript{Honors Program}
+% \location{June 2022 | Philadelphia, PA}
+% \sectionsep
+
+% \subsection{HKU (Exchange Student)}
+% % \subsection{The University of Hong Kong (exchange)}
+% % \descript{Exchange Student, Faculty of Science}
+% \location{Sep-Dec 2018 | Hong Kong, HK}
+% \sectionsep
+
+% \subsection{GPA: 3.72}
+% \subsection{Math GPA: 3.74}
+% % \sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     LINKS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     COURSEWORK
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+
+% \vspace{3}
+% \subsection{Undergraduate}
+% \href{http://www.math.drexel.edu/~jblasiak/AbstractAlgebra331Fall2019.html}{Abstract Algebra I}\\
+% Elements of Modern Analysis I \\
+% Linear Algebra I, II \\
+% \href{https://darijgrinberg.gitlab.io/t/19fco/}{Enumerative Combinatorics} \\
+% Topics in Mathematical Physics \\
+% % Observational Astrophysics \\
+% \sectionsep
+% \subsection{Graduate}
+% \href{http://www.math.drexel.edu/~jblasiak/AlgebraMath533Winter2019.html}{Abstract Algebra}  \\
+% Topics in Graph Theory\\
+% Principles of Analysis 1 \\
+% Algebraic Number Theory \\
+% Topology\\
+% Algebraic Combinatorics (Audit)
+% \sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     SKILLS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Skills}
+% \vspace{3}
+% \subsection{Programming} \\
+% \textbullet{}Java \textbullet{}   Shell \textbullet{} Python \textbullet{} VPython \textbullet{} MATLAB \textbullet{} SageMath \textbullet{} \LaTeX\ 
+% \newline
+% \subsection{Computational} \\
+% \textbullet{}
+% \href{https://www.dftbplus.org/}{DFTB+} \textbullet{}   \href{http://www.jmol.org/}{JMOL} \textbullet{} \href{https://geant4.web.cern.ch/}{GEANT4}  \textbullet{} \href{https://www.ks.uiuc.edu/Research/vmd/}{VMD} \textbullet{} \href{https://avogadro.cc/}{Avogadro}  \textbullet{} \href{https://www.openmp.org/}{OpenMP}\textbullet{} Slurm  \\ 
+% % \subsection{Laboratory} \\
+% % Geiger-Mueller Counter \textbullet{} Electron Diffraction  \textbullet{} Spectroscopy  \textbullet{} Nuclear Magnetic Resonance
+% %  \\ 
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Links} 
+Google Scholar:// \href{https://scholar.google.com/citations?view_op=list_works&hl=en&user=2SBJFIgAAAAJ}{\bf Omesh Dhar Dwivedi} \\
+OrcidID://\href{https://orcid.org/0000-0003-3633-8874}{\bf 0000-0003-3633-8874
+}
+
+LinkedIn://  \href{https://www.linkedin.com/in/omeshdd}{\bf omeshdd} \\
+Github:// \href{https://github.com/greatodda}{\bf greatodda} \\
+YouTube://  \href{https://www.youtube.com/channel/UCcQ8yuaJROwJW_gKEfD8SyQ}{\bf Omesh DD} \\
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\vspace{3}
+\subsection{Programming} \\
+\textbullet{}Java \textbullet{}   Shell \textbullet{} Python \textbullet{} VPython \textbullet{} MATLAB \textbullet{} SageMath \textbullet{} \LaTeX\ 
+\newline
+\subsection{Computational} \\
+\textbullet{}
+\href{https://www.dftbplus.org/}{DFTB+} \textbullet{}   \href{http://www.jmol.org/}{JMOL} \textbullet{} \href{https://geant4.web.cern.ch/}{GEANT4}  \textbullet{} \href{https://www.ks.uiuc.edu/Research/vmd/}{VMD} \textbullet{} \href{https://avogadro.cc/}{Avogadro}  \textbullet{} \href{https://www.openmp.org/}{OpenMP}\textbullet{} Slurm  \\ 
+% \subsection{Laboratory} \\
+% Geiger-Mueller Counter \textbullet{} Electron Diffraction  \textbullet{} Spectroscopy  \textbullet{} Nuclear Magnetic Resonance
+%  \\ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Honors and Awards
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Honors and Awards} 
+\textbullet{} \textbf{Robert J Bickel Endowed Scholarship}, Department of Mathematics, Drexel University, 2021 \\
+\textbullet{} \textbf{Susan and Donald Larson Award}, Department of Physics, Drexel University, 2021 \\
+\textbullet{} William Lowell Putnam Examination (2020), MAA (top 500) \\
+\textbullet{} \textbf{\href{https://drexel.edu/undergraduate-research/STAR-scholars/summer-showcase/}{Star Scholar (2018)}}, Pennoni Honors College \\
+\textbullet{}\textbf{\href{https://drexel.edu/undergraduate-research/research-benefits/undergraduate-research-leaders/Meet\%20the\%20URLs/}{Undergraduate Research Leader (2018-19)}}, Pennoni Honors College   \\
+% \textbullet{} \href{https://www.iapt.org.in/exams/nse/nsep.html/}{National Standard Examination in Physics (2014)}, top 300/25000  \\
+%\textbullet{} JEE Main and Advanced (IIT-JEE) (2017), top 4000/1400000  \\
+\textbullet{} Regional Mathematics Olympiad Scholar, HBCSE (2015)\\
+%\textbullet{} \href{https://www.iarcs.org.in/inoi/2015/zio2015/results_zio2015.php#Lucknow}{Zonal Informatics Olympiad (2015)}, IARCS (top 171) \\
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Activities
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Activities} 
+\vspace{3}
+\runsubsection{\href{https://drexeldebate.weebly.com/}{Drexel University Debate Union}}\\
+\descript{\textbf{Vice President and Founder \small (Former President)}}
+\location{\textbf{September 2017 – Present | Drexel University}}
+\href{https://www.facebook.com/hkdo2018/?ref=page_internal}{Octofinalist at Hong Kong Debate Open 2018} \\
+\href{https://www.facebook.com/Debattierclub.Muenchen/photos/a.1618436488221546/2108417185890138/?type=3}{Pre-quarter Finalist at North East Asia Open Championship 2018} \\
+\href{https://files.forensicstournament.net/results/2970-Speaker\%20Awards.pdf}{10th Best ESL Speaker at Huber Debates 2020}\\
+
+
+\vspace{8}
+
+\runsubsection{ Mathematics Student Organization}\\
+\descript{\textbf{President \small(Former Vice President and Event Coordinator)}}
+\location{\textbf{March 2018 – Present | Drexel University}}
+Established and Organized Annual Poker Nights, Annual Graduate School panels, REU search panels, and facilitated the formation of Putnam Study Groups, GRE Math Subject test study groups and a Mentorship program for majors and prospective majors.
+\sectionsep
+
+\vspace{8}
+
+\runsubsection{ Drexel Chess Club}\\
+\descript{\textbf{Vice President \small(Former Manager)}}
+\location{\textbf{September 2017 – Present | Drexel University}}
+USCF Regular Rating - 1080\\
+USCF Blitz Rating  - 1301\\
+USCF Quick Rating - 1066\\
+\sectionsep
+
+
+
+
+% \section{Activites} 
+% \begin{tabular}{rll}
+% 2018- Present         & \href{https://dragonlink.drexel.edu/organization/mathematics-student-organization}{Mathematics Student Organization} & President \\
+% 2018- Present	     & \href{https://drexel.campuslabs.com/engage/organization/DUDU}{Drexel University Debate Union}  & President \\
+% 2017- Present	     & \href{https://www.dusers.drexel.edu/~chess/}{Drexel Chess Club}   & Manager \\
+% 2017- Present	     & Society of Physics Students: Drexel Chapter  & Member\\
+
+% \end{tabular}
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.55\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\vspace{3}
+\runsubsection{Drexel University}\\
+\descript{\textbf{Undergraduate Research Project}}
+\location{\textbf{July 2020 – Present | Philadelphia, PA (Remote)}}
+Worked with \textbf{\href{https://www.cip.ifi.lmu.de/~grinberg/}{Dr. Darij Grinberg}} to find and prove the probability of vanishing Jacobi-Trudi determinants in finite fields for various partition shapes and skew-shapes.
+\vspace{4}
+\newline
+\vspace{0.001}
+\textbullet{} Found and proved the exact probability of Jacobi-Trudi determinants vanishing for connected ribbons, n-staircases and block staircase partition shapes \\
+\textbullet{} Conjectured a general expression for the probability of the Schur polynomial vanishing for shifted-staircases. \\
+\textbullet{} Generalized the classical result of counting the number of Hankel Matrices with a bounded rank to one where the first few entries of the matrix are fixed.
+
+\sectionsep
+
+\runsubsection{Princeton Plasma Physics Laboratory (PPPL) }
+\descript{Undergraduate Research Assistant (Remote)}
+\location{April-July 2020, June-October 2021  | Princeton, New Jersey}
+Worked with \textbf{\href{https://theory.pppl.gov/people/profile.php?pid=2&n=Igor-Kaganovich}{Dr. Igor Kaganovich}} to study Anisotropic Etching of Silicon Nitride using Fluorine.
+\vspace{4}
+\newline
+\vspace{0.01}
+\textbullet{} Setup PBC simulations of Silicon Nitride and Si-100/111 surfaces interacting with $F_2$, $HF$ and $(NH_4F)_n$.
+\newline
+\textbullet{} Predicted a two step mechanism for etching of Silicon Surfaces via $F_2$ chemisorption.
+\vspace{10}
+
+\descript{Undergraduate Research Assistant (Spring-Summer)}
+\location{April 2019 – October 2019 | Princeton, New Jersey}
+Worked with \textbf{\href{https://theory.pppl.gov/people/profile.php?pid=40&n=St\%C3\%A9phane-Ethier}{Dr. Stephane Ethier}} and \textbf{\href{https://theory.pppl.gov/people/profile.php?pid=2&n=Igor-Kaganovich}{Dr. Igor Kaganovich}} and performed a Computational Study of Boron Nitrogen NanoStructure Formation.
+\vspace{4}
+\newline
+\vspace{0.001}
+\textbullet{} Setup, ran and studied \textbf{MD} simulations of $B_xN_y$ Systems to understand the most efficient pathway to dissociate $N_2$ as well as to create recurring BN chain from such interactions.
+\newline
+\textbullet{} Predicted and confirmed a possible pathway of \textbf{FullBorene} formation solely from $B_2$ and $N_2$. Results can be viewed at \textbf{\href{https://vimeo.com/user103046658}{vimeo.com/user103046658}}
+\newline
+\textbullet{} Performed Kinetic as well as thermodynamic calculations to check the feasibility of the proposed mechanism of FullBorene formation.
+
+
+
+
+\sectionsep
+\runsubsection{Drexel University}\\
+\descript{\textbf{Undergraduate Research Assistant- \href{https://drexel.edu/undergraduate-research/STAR-scholars/STAR-scholars/}{STAR Scholars Program}}
+}
+\location{June 2018 – October 2018 | Philadelphia, PA}
+Worked with \textbf{\href{https://drexel.edu/coas/faculty-research/faculty-directory/Neilson\%20Russell/}{Dr. Russell Neilson}} on setting up and running simulations of the Drexel Bubble Chamber. 
+\vspace{4}
+\newline
+\vspace{0.001}
+\textbullet{} Built {\textbf{GEANT4}} using {\textbf{cmake}} from scratch on the department system.
+\newline
+\textbullet{} Designed \href{https://geant4.web.cern.ch/}{\textbf{GEANT4}} Monte-Carlo simulations of the \href{https://www.picoexperiment.com/}{\textbf{PICO}} (dark matter search experiment) Drexel Bubble Chamber, building, from scratch, its geometry into GEANT4
+\newline
+\textbullet{} Analyzed and processed the simulation and experimental data to calculate the probability of \textbf{electronic and nuclear recoils}
+\sectionsep
+
+\sectionsep
+
+\section{News Coverage}
+\textbullet{} Pathway to forerunner of rugged nanotubes that could lead to widespread industrial fabrication, PHYS.ORG \\
+
+\href{https://phys.org/news/2021-09-pathway-forerunner-rugged-nanotubes-widespread.html}{\textbf{Article Link}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Activites} 
+% \begin{tabular}{rll}
+% 2018- Present         & \href{https://dragonlink.drexel.edu/organization/mathematics-student-organization}{Mathematics Student Organization} & President \\
+% 2018- Present	     & \href{https://drexel.campuslabs.com/engage/organization/DUDU}{Drexel University Debate Union}  & President \\
+% 2017- Present	     & \href{https://www.dusers.drexel.edu/~chess/}{Drexel Chess Club}   & Manager \\
+% 2017- Present	     & Society of Physics Students: Drexel Chapter  & Member\\
+
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
